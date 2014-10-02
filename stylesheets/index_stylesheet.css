@@ -18,8 +18,6 @@ body {
     background-image: url("../images/philadelphia_Background.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-
-
 }
 a:link{
     text-decoration: none;
@@ -40,7 +38,6 @@ a:link{
 }
 
 #header p {
-
   height: 85px;
   width: 510px;
   margin: auto;
@@ -75,9 +72,7 @@ ul {
     padding-left: 0px;
     float: right;
 }
-/*a:hover {
-    background-color: pink;
-}*/
+
 #navbar a:hover {
     background-color: white;
 }
@@ -117,7 +112,6 @@ ul {
     display: inline;
     background-color: rgba(63,142,171,0.4);
     /*border: 1.5px solid white;*/
-
 }
 
  #content_right_text {
