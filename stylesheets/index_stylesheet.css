@@ -39,8 +39,17 @@ a:link{
     display: inline;
 }
 
- #heading_fonts img:hover {
+#header p {
+
+  height: 85px;
+  width: 510px;
+  margin: auto;
+}
+
+.heading_fonts img:hover {
     background-image: url("../images/name_logo_hover.png");
+    height: 80px;
+    width: 500px;
 }
 #navbar {
     float: right;
@@ -52,7 +61,7 @@ ul {
     list-style-type: none;
     margin: 0;
     text-align: center;
-    width:  1020px;
+    /* width:  1020px; */
     margin: auto;
 }
 #navbar a {
@@ -63,7 +72,7 @@ ul {
 }
 #navbar li {
     display: inline;
-    padding-left: 0.5px;
+    padding-left: 0px;
     float: right;
 }
 /*a:hover {
@@ -93,7 +102,7 @@ ul {
     width: 66%;
     display: inline;
     background-color: rgba(63,142,171,0.4);
-    border: 1.5px solid white;
+    /*border: 1.5px solid white;*/
     font-size: 3em;
 
 }
@@ -107,7 +116,7 @@ ul {
     width: 33%;
     display: inline;
     background-color: rgba(63,142,171,0.4);
-    border: 1.5px solid white;
+    /*border: 1.5px solid white;*/
 
 }
 
@@ -123,7 +132,7 @@ ul {
     height: 300px;
     width: 300px;
     padding-top: 0;
-    border: 2.5px solid black;
+    /*border: 2.5px solid black;*/
 }
 #footer {
     clear:both;
