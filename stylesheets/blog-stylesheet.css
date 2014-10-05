@@ -2,7 +2,7 @@
   text-align: justify;
   font-size: 1em;
 }
-.blog #line_break {
+#line_break {
   border: 1px solid grey;
   width: 100%;
   margin: auto;
