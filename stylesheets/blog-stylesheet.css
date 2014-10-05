@@ -10,4 +10,6 @@
 .blog #title_font {}
 
 .blog #date_font {}
-h4 {}
+h4 {
+  font-weight: bold;
+}
