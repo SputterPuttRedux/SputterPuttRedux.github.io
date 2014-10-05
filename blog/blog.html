@@ -35,24 +35,24 @@
             <p>At their most basic, arrays and hashes are things.  That's right, I said things.  To the more erudite among us, Hashes and Arrays can be formally described as <a href="http://en.wikipedia.org/wiki/Data_structure">data structures</a>, but I assume that if you're reading this blog entry, you're a noob like me and you may or may not have an idea of what a data structure is.  So, let's just keep it simple.  Arrays and Hashes are things--things that store other things. That clear it up?  No? I didn't think so.  </p>
             <p>It might help to think of Arrays and Hashes like tupperware containers made of code.  Like tupperware, Hashes and Arrays can contain itemsâ€”unlike tupperware those items aren't leftovers no one wants.  Indeed, the items they store are called objects.  But because we're all noobs here, and because the idea of objects can get a wee bit complicated when you're just learning about all of this, let's just say that Hashes and Arrays store information.  Better? I thought so.</p>
             <p>Now, Hashes and Arrays can both can store the same type of information, whether strings like “hey you!” or integers like 9--they just differ in their rules of construction and they way they store that information.  Arrays are more rigid--any object you store in an array is going to be indexed by an ordered integer list.  What?  Okay, simple.  Just think of it like this: any information you put in an array will be assigned a number--just like a numbered list.  Except this list begins with zero.    Look at this chart I made.  I hope it makes what I'm trying o say more clear:</p>
-            <p><img src="array_Chart.png"></p>
+            <p><img src="../images/array_Chart.png" /></p>
             <p>I placed the the string “zero” in the first position of my array.  Because of how arrays work, the string “zero”was assigned the number zero.  Don't get it confused though, I could've placed any string in the array and it would've been assigned an integer regardless of what the string was.  You can see that more clearly with the string “peanut butter” which has been assigned the integer 2, because "peanut butterâ€ was the third object placed in my array.  Remember arrays begin they're number assignment at 0.</p>
             <p>Now,  hashes let you store information based on an arbitrary assignment of a value.  Does that sound too computery?  Just look at the hash chart I made to elucidate what I mean:</p>
-            <p><img src="hash_Chart.png"></p>
+            <p><img src="../images/hash_Chart.png" /></p>
             <p>In a hash you can place any information you want.  Unlike arrays, hashes don't assign an integer to correspond to the information you've placed within it.  Hashes understand what you put in them as key/value pairs.  So in the chart above, all my keys are names of people.  All my values are associated with those people somehow.  It just so happens that all of the information in my hash above take the form of strings.  But because you can put any object in a hash, the information doesn't have to be a string.  It can be anything!</p>
             <h4>This stuff sounds awesome.  How can I make a Hash?  How can I make an Array?</h4>
             <p>To make array, here's the syntax.  </p>
             <p>array = [ ]  or  array = Array.new( )</p>
             <p>Those commands create and empty arrays. If you want to create an array with information (objects) already in it, you just have to place the information/objects in between the brackets like so:</p>
-            <p><img src="mic_Check_Array.png"></p>
+            <p><img src="../images/mic_Check_Array.png" /></p>
             <p>With  a little finagling (that we won't get into now)  we  could get the above array to return the following to our console:</p>
-            <p><img src="mic_Check_Console.png"></p>
+            <p><img src="../images/mic_Check_Console.png" /></p>
             <p>To make a hash, here's the syntax:</p>
             <p>hash = {} or hash = Hash.new()</p>
             <p>Like the example with arrays above, that creates an empty hash.  If you want to create a hash with information in it already, you can use the following syntax:</p>
-            <p><img src="phife_Dawg_Hash.png"></p>
+            <p><img src="../images/phife_Dawg_Hash.png" /></p>
             <p>Again, through the magic of Ruby, you could get the following to show up in the console:</p>
-            <p><img src="phife_Dawg_Console.png"></p>
+            <p><img src="../images/phife_Dawg_Console.png" /></p>
             <h4>So if they both store information, why do they both exist? Is one better than the other? </h4>
             <p>Now, because I'm a noob myself, and because my experience with / exposure to Arrays and Hashes has been somewhat limited, I honestly struggle a bit with an explanation here.  Hashes are more flexible, obviously, because a developer's not limited to the way information is stored within them.   According to <a href="http://www.sitepoint.com/guide-ruby-collections-part-arrays/ ">this article</a>arrays are efficient workhorses that are ubiquitous in ruby. Either way, they're both super-useful to allow information to be stored and accessed at will.  Thus they're both essential concepts to understand in your journey to be a developer, dear noob!</p>
           </div>
