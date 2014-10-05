@@ -13,3 +13,14 @@
 h4 {
   font-weight: bold;
 }
+
+a:link {
+  text-decoration: none;
+  color: #CBFCC5;
+}
+
+a:hover {
+  text-decoration: none;
+  color: 3F8EAB;
+
+}
