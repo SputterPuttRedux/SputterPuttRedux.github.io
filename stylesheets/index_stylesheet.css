@@ -102,7 +102,7 @@ ul {
 
 }
 #content_left {
-    text-align: center;
+    text-align: left;
     margin: auto;
 }
 #content_right {
@@ -179,7 +179,7 @@ li a img {
 
 .blog p {
   text-align: justify;
-  font-size: .5em;
+  font-size: 1em;
 }
 .blog #line_break {
   border: 1px solid grey;
