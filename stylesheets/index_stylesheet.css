@@ -181,15 +181,20 @@ li a img {
   text-align: justify;
   font-size: 1em;
 }
-.blog #line_break {
+
+#line_break {
   border: 1px solid grey;
-  width: 100%;
+  width: 90%;
   margin: auto;
 }
+
 .blog #title_font {}
 
 .blog #date_font {}
 .blog h1, h3 {
     text-align: left;
+}
+h4 {
+    font-weight: bold;
 }
 
