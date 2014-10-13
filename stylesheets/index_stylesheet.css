@@ -63,7 +63,7 @@ ul {
 }
 #navbar a {
     width: 60px;
-    background-color: #1E408A;
+    background-color: #CBFCC5;
     height: 25px;
     display: block;
 }
@@ -74,7 +74,7 @@ ul {
 }
 
 #navbar a:hover {
-    background-color: white;
+    background-color: #97E6AF;
 }
 #outer_navbar {
     width: 1020px;
@@ -96,8 +96,8 @@ ul {
     height: 595px;
     width: 66%;
     display: inline;
-    background-color: rgba(63,142,171,0.4);
-    /*border: 1.5px solid white;*/
+    background-color: rgba(203,252,197,0.4);
+    border: 1.5px solid #CBFCC5;
     /*font-size: 3em;*/
 
 }
@@ -110,8 +110,8 @@ ul {
     height: 595px;
     width: 33%;
     display: inline;
-    background-color: rgba(63,142,171,0.4);
-    /*border: 1.5px solid white;*/
+    background-color: rgba(203,252,197,0.4);
+    border: 1px solid #CBFCC5;
 }
 
  #content_right_text {
