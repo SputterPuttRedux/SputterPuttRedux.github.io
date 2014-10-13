@@ -3,7 +3,7 @@ border: 1px solid black
 } */
 
 html {
-    font-family: Cabin;
+    font-family: Muli;
     border: none;
     margin: 0;
     padding: 0;
@@ -193,6 +193,7 @@ li a img {
 .blog #date_font {}
 .blog h1, h3 {
     text-align: left;
+    font-family: "Open Sans Condensed;
 }
 h4 {
     font-weight: bold;
