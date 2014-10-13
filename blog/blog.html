@@ -23,6 +23,31 @@
     <div id="content_frame">
         <div id="content_left" style="overflow: scroll">
 <!--Below this line is the Blog Entry "Header" -->
+          <div class="blog" id="W4Technical">
+           <h1 class="blog" id="title_font">Indubitable Enumerables</h1>
+            <h3 class="blog" id="date_font">October 12, 2014</h3>
+        </div>
+        <div id="line_break"></div>
+<!--Below this line is the actual Blog Entry -->
+          <div class="blog" id="blog_entry">
+          <p>This week's technical blog focuses on Ruby's Enumerable module.  What's a module, you ask?  Well let me tell you, because I just found out myself when researching to write this blog.  <a href="http://stackoverflow.com/users/8192/scottru">This dude</a> was kind enough to answer that question a long time ago on <a href="http://stackoverflow.com/questions/151505/difference-between-a-class-and-a-module">Stack Overflow</a> so, I'll just drop his well-worded answer below for your consumption:</p>
+          <p class="block_quote">Modules are about providing methods that you can use across multiple classes - think about them as "libraries" (as you would see in a Rails app). Classes are about objects; modules are about functions.</p>
+          <p>In Ruby, the Enumerable module is pretty awesome.  It can be used with any of the  <a href="http://ruby.bastardsbook.com/chapters/collections/">collections classes</a>.  For noobs like you and me, that means any of the classes that can that can have .each called on them. The Enumerable module supplies about 20 useful counting an iteration-related methods to the classes it can be used with.</p>
+          <h4>Enumerable#cycle: The real focus of this blog entry</h4>
+          <p>Okay, so in truth, this blog entry was supposed to focus on only one of the methods made available by the Enumerable module.  I just felt that I'd be leaving out a lot of background information if I just jumped in to explaining the method.  Now that you have the background, let's talk about Enumerable#cycle!</p>
+          <p>#cycle is a method that <a href="http://en.wikipedia.org/wiki/Iteration#Computing">iterates</a>.  It can accept a single, positive integer as an argument, abd that integer will tell it how many times it should iterate.  #cycle can also accept <a href="http://en.wikipedia.org/wiki/Block_(programming)">a code block</a>.  If a code block is supplied with no argument, #cycle will iterate infinitely.  Check out this example I made using my code editor:</p>
+          <p><img src="../images/w4tb_sublime1.png" /></p>
+          <p>Here, I've used #cycle to iterate over the array I created called my_array. I've passed it the parameter of 2--which tells it that it should iterate over my_array two times and execute the supplied code block.  Here's the results in my console: </p>
+          <p><img src="../images/w4tb_console1.png"/></p>
+          <p>As you can see, #cycle caused the each of the integers in the array to multiplied by two, and returned to the console twice.</p>
+          <p>Now, #cycle is nondestructive.  For Ruby noobs, this just means that this method doesn't acutally make changes to the array it iterates over.  A really interesting use of this method comes when you use it to puts the next item in a repeating sequence. The good folks over at <a href="http://www.globalnerdy.com/2008/07/06/enumerating-enumerable-enumerablecycle/">Global Nerdy</a> to an awesome job of explaining just how this works, but I've gone ahead and demonstrated this in my own code editor and console:</p>
+          <p><img src="../images/w4tb_sublime2.png" /></p>
+          <p>Above, you can see that I've assigned the variable <code>each_element</code>to the object formed by calling #cylce on an array. I then puts <code>each_element.next</code> three times and this it what returns to my console:</p>
+          <p><img src="../images/w4tb_console2.png"/></p>
+          <p>Each element in the original array is returned to the console in sequence. Pretty neat huh? Now, we can't just ignore the <code>.next</code> method I also used.  Check out the ruby documentation for more information on what this does--although, I think it's probably pretty obvious.  Even to a noob!</p>
+        </div>
+<!--Blog Ends here -->
+<!--Below this line is the Blog Entry "Header" -->
           <div class="blog" id="W3Cultural">
             <h1 class="blog" id="title_font">Thinkin' and Learnin' and Wishin' and Hopin'</h1>
             <h2>Reflecting on my thinking and learning styles.</h2>
@@ -129,6 +154,7 @@
           <div id="line_break"></div>
           <h3 style="text-align: center">Latest Blog Entries</h3>
             <ul class="link_list" id="content_right_text">
+              <li><a href="#W4Technical">Indubitable Enumerables</a></li>
               <li><a href="#W3Cultural">Learning and Thinking Styles</a></li>
               <li><a href="#W3Technical">Hashes and Arrays</a></li>
               <li><a href="#W2Cultural">The Culture of DBC</a></li>
