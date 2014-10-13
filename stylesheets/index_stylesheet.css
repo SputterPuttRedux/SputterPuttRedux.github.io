@@ -152,7 +152,7 @@ ul {
 
 #social_Media li {
     display: inline-block;
-    margin: auto;
+    margin: 10px 60px 0px 0px;
     /*padding: 0 50 50 0;*/
     border: 1px solid black;
     border-radius: 50%;
