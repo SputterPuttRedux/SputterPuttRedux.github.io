@@ -71,7 +71,7 @@
               <p>Let's start this section of with an image, shall we?</p>
               <img src="../images/W6_proc_sublime.png"/>
               <p>Here's the results of that code in the console:"</p>"
-              <img src="W6_proc_console.png" />
+              <img src="../images/W6_proc_console.png" />
               <p><a href="http://www.reactive.io/tips/2008/12/21/understanding-ruby-blocks-procs-and-lambdas/" target="_blank">Reactive IO</a> has a sweet and succint explanation of Procs or <strong>Procedures</strong>, which is essentially the following: </p>
               <blockquote cite="http://www.reactive.io/tips/2008/12/21/understanding-ruby-blocks-procs-and-lambdas/">We may want to have many different blocks at our disposal and use them multiple times. As such, passing the same block again and again would require us to repeat ourself[sic]. However, as Ruby is fully object-oriented, this can be handled quite cleanly by saving reusable code as an object itself. This reusable code is called a Proc (short for procedure). The only difference between blocks and Procs is that a block is a Proc that cannot be saved, and as such, is a one time use solution.</blockquote>
 
@@ -81,7 +81,7 @@
               <p>Last, but not least are Lambdas.  On first glance, Lambdas look very similar to procs:</p>
               <img src="../images/W6_lamda_sublime.png" />
               <p>Here's this code in the console:</p>
-              <img src="W6_lambda_console.png" />
+              <img src="../images/W6_lambda_console.png" />
               <p>Indeed, in the above image, we're taking what looks like a regular old code block and we're assigning it to a variable just like we did with Procs above. Further down, we  reference the variable more than once. Still similar to Procs, right?  The most obvious difference between the two is the notation for how they're formed--with Procs requiring <code>Proc.new</code> and lamdas simply being declared and followed by the code block we wish to repeat.</p>
               <p>But there's more to it than that! Helpful Ruby Blogger Alan Skorkin wrote a dream explanation for noobs on the differences between Procs and Lamdas.  You can find it <a href="http://www.skorks.com/2010/05/ruby-procs-and-lambdas-and-the-difference-between-them/#difference" target="_blank">here</a> Becase this blog is both a learning process for you and for me, dear reader, I'll try to explain Mr. Skorkin's assessment in my own words.  Ahem:</p>
               <p>At the end of the day, the two are very similar, but they treat control flow differently.  Certain keywords that are essential to flow such as <code>return</code> and <code>break</code> behave differently within each of these block-saving objects.</p>
