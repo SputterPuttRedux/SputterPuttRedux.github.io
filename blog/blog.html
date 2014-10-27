@@ -53,12 +53,14 @@
             <div class="blog" id="blog_entry">
               <p>Strap on your thinking caps, noobs! (or strap off your yawn caps as it were) because it's time for another edition of Dionne's DBC technical blog!  This week's topic falls squarely in the center of that ever-elusive subject of <a href="http://en.wikipedia.org/wiki/Object-oriented_programming" target="_blank">Object Orientated Programming</a>! Glance at the links--they're helpul! Specifically, this week I will be covering the topic of blocs, procs and lambdas.  Read on for your own edification:</p>
               <h3>Blocs</h3>
-              <p>By now, if you've read any of my previous technical blog entries, you've probably encountered blocs or blocks many times. Blocks are <a href="http://rubylearning.com/satishtalim/ruby_blocks.html" target="_blank">code blocks</a>--snippets of code that can be found between <code>{curly braces}</code> or <strong>do</strong> and <strong>end</strong> syntax.  Easy enough, right?  Take a look at this image:</p>
-              <img />
+              <p>By now, if you've read any of my previous technical blog entries, you've probably encountered blocs or blocks many times. Blocks are <a href="http://rubylearning.com/satishtalim/ruby_blocks.html" target="_blank">code blocks</a>--snippets of code that can be found between <code>{curly braces}</code> or <strong>do</strong> and <strong>end</strong> syntax.  Easy enough, right?  Take a look at these images:</p>
+              <img src="../images/W6_curly_block_sublime.png"/>
+              <p></p>
+              <img src="../images/W6_block_do_end_sublime.png"/>
               <p>The above shot from my code editor shows a common method <code>#each</code> being called with code blocks that are formed between <code>{curly braces}</code> and between <strong>do</strong> and <strong>end</strong>. The reason to show both kinds of blocks is to demonstrate one coding convention in Ruby:  if your block is only going to take up one line of code, the convention is to use the <code>{curly braces}</code> otherwise, use <strong>do</strong> and <strong>end</strong> syntax. </p>
 
               <p>Here's some other useful things to remember about code blocks:</p>
-                <ul id="content_right_text">
+                <ul style="list-style-type:circle; text-align:left">
                   <li>If you're associating a block with a method, it must always appear to the right of the method</li>
                   <li>If you declare a variable for the first time within a code block, you will only be able to access it there. </li>
                   <li>A code block is not actually an object in Ruby. Thus its not a really useful form for repeating tasks </li>
@@ -67,16 +69,20 @@
 
               <h3>Procs</h3>
               <p>Let's start this section of with an image, shall we?</p>
-              <img src=""/>
+              <img src="../images/W6_proc_sublime.png"/>
+              <p>Here's the results of that code in the console:"</p>"
+              <img src="W6_proc_console.png" />
               <p><a href="http://www.reactive.io/tips/2008/12/21/understanding-ruby-blocks-procs-and-lambdas/" target="_blank">Reactive IO</a> has a sweet and succint explanation of Procs or <strong>Procedures</strong>, which is essentially the following: </p>
               <blockquote cite="http://www.reactive.io/tips/2008/12/21/understanding-ruby-blocks-procs-and-lambdas/">We may want to have many different blocks at our disposal and use them multiple times. As such, passing the same block again and again would require us to repeat ourself[sic]. However, as Ruby is fully object-oriented, this can be handled quite cleanly by saving reusable code as an object itself. This reusable code is called a Proc (short for procedure). The only difference between blocks and Procs is that a block is a Proc that cannot be saved, and as such, is a one time use solution.</blockquote>
 
-              <p>In the above image, the Proc (and it's usefulness) can be seen beginning on the line that includes <code>Proc.new</code>. Do you see how the Proc is assigned to a variable, and how that variable is used multiple times?  This is awesome, right!? Procs provide a way to "objectify" blocks.  They make it such that blocks can be accessed again and again.  (Note to invoke your Proc, you must call the #call method)
+              <p>In the above image, the Proc (and it's usefulness) can be seen beginning on the line that includes <code>Proc.new</code>. Do you see how the Proc is assigned to a variable, and how that variable is used multiple times?  This is awesome, right!? Procs provide a way to "objectify" blocks.  They make it such that blocks can be accessed again and again.  (Note to invoke your Proc, you use the (&variable_name) notation.)
 
               <h3>Lambdas</h3>
               <p>Last, but not least are Lambdas.  On first glance, Lambdas look very similar to procs:</p>
-              <img src="" />
-              <p>Indeed, in the above image, we're taking what looks like a regular old code block and we're assigning it to a variable. Further down, we  reference the variable more than once. Similar to Procs so far, right?  The most obvious difference between the two is the notation for how they're formed--with Procs requiring <code>Proc.new</code> and lamdas simply being declared and followed by the code block we wish to repeat.</p>
+              <img src="../images/W6_lamda_sublime.png" />
+              <p>Here's this code in the console:</p>
+              <img src="W6_lambda_console.png" />
+              <p>Indeed, in the above image, we're taking what looks like a regular old code block and we're assigning it to a variable just like we did with Procs above. Further down, we  reference the variable more than once. Still similar to Procs, right?  The most obvious difference between the two is the notation for how they're formed--with Procs requiring <code>Proc.new</code> and lamdas simply being declared and followed by the code block we wish to repeat.</p>
               <p>But there's more to it than that! Helpful Ruby Blogger Alan Skorkin wrote a dream explanation for noobs on the differences between Procs and Lamdas.  You can find it <a href="http://www.skorks.com/2010/05/ruby-procs-and-lambdas-and-the-difference-between-them/#difference" target="_blank">here</a> Becase this blog is both a learning process for you and for me, dear reader, I'll try to explain Mr. Skorkin's assessment in my own words.  Ahem:</p>
               <p>At the end of the day, the two are very similar, but they treat control flow differently.  Certain keywords that are essential to flow such as <code>return</code> and <code>break</code> behave differently within each of these block-saving objects.</p>
             </div>
