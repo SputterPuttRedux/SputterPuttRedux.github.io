@@ -19,35 +19,38 @@
     <p>In order for a recursive function to work properly, it has to have a bailout condition, otherwise the function will call to itself infinitely causing an infinite loop.  This will make any program crash. Check out the recursive method I've written below (in Ruby).  It demonstrates all that I've explained previously about recursive functions:  It loops, it calls to itself, and it has a bailout condtion.</p>
 
     <p>
-    <code>array = (1..10).to_a</code>
-    <code>p "Hello, your array is #{array.length} indeces long."</code>
-    <code>p "We'll now call your recursive method."</code>
+    <code>array = (1..10).to_a</p>
+    <p>p "Hello, your array is #{array.length} indeces long."</p>
+    <p>p "We'll now call your recursive method."</p>
 
-    <code>def recursive(array)</code>
+    <p>def recursive(array)</p>
 
-    <code>  if array.length == 1</code>
-    <code>    p "you've reached the end! Your array is now #{array.at(1)} index long."</code>
-    <code>  else array.pop</code>
-    <code>    p "you've taken index number #{array.length} away from your array."</code>
-    <code>    recursive(array)</code>
-    <code>  end</code>
-    <code>end</code>
+    <p>  if array.length == 1</p>
+    <p>    p "you've reached the end! Your array is now #{array.at(1)} index long."</p>
+    <p>  else array.pop</p>
+    <p>    p "you've taken index number #{array.length} away from your array."</p>
+    <p>    recursive(array)</p>
+    <p>  end</p>
+    <p>end</code>
     </p>
 
 
-  <p>When you call to <code>recursive(array)</code> in the console, the following is returned.  Hopefully the console output demonstrates the process of this method.
+  <p>When you call to <code>recursive(array)</code> in the console, the following is returned:</p>
+  <p><img src="../images/t8-tech1.png"/></p>
+  <p>Hopefully the console output demonstrates the process of this method.
   Some <a href="http://www.dummies.com/how-to/content/a-taste-of-recursion.html" target="_blank">authorities on the internet</a> agree that a useful time to implement a recursive function is when you're dealing with factorials.  Check out the other recursive method I've written in Ruby below:<p>
-
-  <code>def factorial(x)</code>
-  <code> if x == 1</code>
-  <code>  p "All done!"</code>
-  <code> else</code>
-  <code>  x = x * factorial(x-1)</code>
-  <code> end</code>
-  <code>return x</code>
-  <code>end</code>
-
+  <p>
+  <code>def factorial(x)</p>
+  <p> if x == 1</p>
+  <p>  p "All done!"</p>
+  <p> else</p>
+  <p>  x = x * factorial(x-1)</p>
+  <p> end</p>
+  <p>return x</p>
+  <p>end</code>
+  </p>
   <p>The above method essentially decrements the parameter its passed (without express language telling it to like <code>--</code>) by virtue of the fact that it calls on itself on the parameter - 1. It stores the value of the parameter times the parmeter minus one, and then it calls on itself until the arguments reaches the break condition. This is the result of calling <code>factorial(5)</code> in the console:</p>
+  <p><img src="../images/t8-tech2.png"/></p>
   </div>
 <!--Blog Ends here -->
 
