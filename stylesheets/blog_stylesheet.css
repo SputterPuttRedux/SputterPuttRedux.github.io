@@ -183,3 +183,30 @@ ul.social_media_links {
     display: block;
     margin: auto;
 }
+
+/*===============================================
+              SOCIAL MEDIA FOOTER
+===============================================*/
+
+.social_media {
+    display: flex;
+}
+
+
+ul.social_media_links {
+     align-self: auto;
+     margin: auto;
+}
+.social_media_links li {
+    list-style-type: none;
+    display: inline-block;
+    margin:10px;
+}
+
+.social_media_links li:hover {
+    background-color: none;
+}
+
+#about_me_blurb {
+    text-align: center;
+}
