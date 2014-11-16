@@ -1,0 +1,96 @@
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0px;
+    width:100%;
+}
+
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial;
+    height: 100%;
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+}
+
+/*==========================================
+    STYLE SETTINGS FOR NAVIGATION CONTAINER
+==========================================*/
+
+.navigation_container {
+    background-color: rgba(5, 34, 97,0.5);
+    height: 50px;
+    position: fixed;
+    width: 100%;
+}
+
+.navigation_container a {
+    color: white;
+    text-decoration: none;
+}
+
+.navigation_container a:hover {
+    text-decoration: none;
+    color: #FFD200;
+}
+
+#navigation_logo {
+    margin-left: 10px;
+    float: left;
+}
+
+h3#navigation_logo {
+    margin: 0;
+    float:left;
+    display:inline;
+    padding-left:15px;
+    font-size: 2em;
+    font-family: Oswald;
+    color: white;
+}
+
+#nav_menu {
+    float: right;
+    font-family: Oswald;
+}
+
+#navigation_menu li {
+    list-style-type: none;
+    display: inline;
+    padding: 5px;
+}
+/*====================================
+    MASTHEAD CONTAINS LARGE IMAGE
+=====================================*/
+
+div.masthead {
+    background-image: url("../images/coming_soon_masthead.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid black;
+    font-family: "Architects Daughter";
+    height: 400px;
+    padding: 0;
+    top: 0px;
+    width: 100%;
+    z-index: -1;
+}
+
+.masthead p {
+    text-align: left;
+    padding-left: 20px;
+    font-size: 5em;
+    color: white;
+    margin-top: 150px;
+    /*background-color: rgba(3, 3, 4,0.5);*/
+    background-image: linear-gradient(to right, rgba(3, 3, 4,0.5), rgba(3, 3, 4,0));
+    background-image: -webkit-linear-gradient(left, rgba(3, 3, 4,0.5), rgba(3, 3, 4,0));
+    background-image: -o-linear-gradient(right, rgba(3, 3, 4,0.5), rgba(3, 3, 4,0));
+    background-image: -moz-linear-gradient(to right, rgba(3, 3, 4,0.5), rgba(3, 3, 4,0));
+}
+
+/*=============================================
+            CONTENT STYLINGS START HERE
+=============================================*/

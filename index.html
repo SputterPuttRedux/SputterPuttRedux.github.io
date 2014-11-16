@@ -1,65 +1,83 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>d. stanfield | home</title>
-  <link rel="stylesheet" href="stylesheets/index_stylesheet.css" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700" rel="stylesheet" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=Cabin" rel="stylesheet" type="text/css">
-  <link href='http://fonts.googleapis.com/css?family=Anton|Muli|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+<html><head>
+  <link href="stylesheets/stylesheet.css" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Bevan|Architects+Daughter|Oswald|Open+Sans+Condensed:300" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <div id="header">
-    <a href="index.html">
-      <p class="heading_fonts" id="header_font">
-        <img id="header_logo" src="images/name_logo.png"/></p>
-    </a></div>
-  <div id="outer_navbar">
-      <ul id="navbar">
-      <!--<li><a href="index.html">home</a></li>-->
-      <li><a href="about/about.html">about</a></li>
-      <li><a href="projects/projects.html">projects</a></li>
-      <li><a href="blog/blog.html">blog</a></li>
-      </ul></div>
-  <div id="content">
-    <div id="content_frame">
-      <div id="content_left">
-        <p>Check out my latest blog post in the right content pane!</p>
-        <p>More stuff coming soon!</p>
-        <p>Check out what kind of web page results from <a href="../projects/gps1.1.html" target="_blank">10-minute time-boxing</a></p>
-        <p>New, sweet <a href="cheatsheet.html" targe="_blank">CheatSheet</a>!</p>
-        </div>
-      <div id="content_right">
-        <p><img id="dionne_Picture" src="images/dionne_picture.png"></p>
-        <p id="content_right_text">contact: <a href="mailto:dstanfield.esq@gmail.com"> dstanfield.esq@gmail.com</a></p>
-        <p id="content_right_text"> Philadelphia | PA</p>
-<!--Below this line is links to recent blog posts-->
-          <div id="line_break"></div>
-          <h3 style="text-align: center">Latest Blog Entries</h3>
-            <ul class="link_list" id="content_right_text">
-              <li><a href="blog/blog.html#W8Cultural">On Conflict</a></li>
-              <li><a href="blog/blog.html#W8Technical">Recursion Excursion</a></li>
-              <li><a href="blog/blog.html#W7Cultural">Stereotype Threat, Part II</a></li>
-              <li><a href="blog/blog.html#W7Technical">Classes and Constructor Fucntions</a></li>
-              <li><a href="blog/blog.html#W6Cultural">Stereotype Threat</a></li>
-              <li><a href="blog/blog.html#W6Technical">Bloc Proc Lambda</a></li>
-              <!--<li><a href="#W5Cultural">Let Me Tell You About Yourself</a></li>-->
-              <!--<li><a href="#W5Technical">A Little More Class</a></li>-->
-              <!--<li><a href="#W4Cultural">Tech's Gender Problem</a></li>-->
-              <!--<li><a href="#W4Technical">Indubitable Enumerables</a></li>-->
-              <!--<li><a href="#W3Cultural">Learning and Thinking Styles</a></li> -->
-              <!--<li><a href="#W3Technical">Hashes and Arrays</a></li>-->
-              <!-- <li><a href="#W2Cultural">The Culture of DBC</a></li> -->
-              <!--<li><a href="#first_post">First Week in Review</a></li>-->
-            </ul>
-      </div>
-    </div></div>
-  <div id="footer">
-    <ul id="social_Media">
-      <li><a href="https://www.facebook.com/public/Dionne-Stanfield" target="_blank"><img src="images/facebook_logo.png"/></a></li>
-      <li><a href="https://plus.google.com/+DionneStanfield/posts" target="_blank"><img src="images/google_plus_logo.png"/></a></li>
-      <li><a href="http://www.linkedin.com/in/dionnestanfield" target="_blank"><img src="images/linkedin_logo.png"/></a></li>
-      <li><a href="https://github.com/SputterPuttRedux" target="_blank"><img src="images/github_logo.png"/></a></li>
-      <li><a href="https://twitter.com/dionnestanfield" target="_blank"><img src="images/twitter_logo.png"/></a></li>
-    </ul></div>
-</body>
-</html>
+ <div class="navigation_container">
+   <a href="index.html"><img id="navigation_logo" src="images/ds_logo_small.png"></a>
+   <h3 id="navigation_logo"><a href="index.html">dionne stanfield</a></h3>
+   <nav id="nav_menu">
+      <ul id="navigation_menu">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="coming_soon.html">RESUME</a></li>
+        <li><a href="coming_soon.html">PORTFOLIO</a></li>
+        <li><a href="blog/blog.html">BLOG</a></li>
+      </ul>
+    </nav>
+ </div>
+<div class="masthead">
+  <h1>aspiring web-developer <span id="slash">/</span> expert web-surfer</h1>
+  <!-- <h2>blah blah blah blah</h2> -->
+</div>
+<div class="content">
+  <h1>projects</h1>
+  <p id="projects_blurb">My attempts at <a href="www.devbootcamp.com" target="_blank">DBC</a> curriculum challenges.  Hopefully, also independent work here soon!</p>
+  <div class="projects_container">
+    <ul class="projects">
+      <li id="project1">
+        <p><a href="../projects/gps1.1.html">10-Minute Website</a></p>
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+      </li>
+      <li id="project2">
+        <p><a href="cheatsheet.html">Arrays/Hashes Cheat Sheet</a></p>
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+      </li>
+      <li id="project3">
+        <p><a href="index.html">Coming Soon!</a></p>
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+      </li>
+      <li id="project4">
+        <p><a href="index.html">Coming Soon!</a></p>
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+      </li>
+    </ul>
+  </div>
+  <h1>blog</h1>
+  <p id="blogs_blurb">Latest blog entries detailing my adventures at <a href="www.devbootcamp.com" target="_blank">DBC</a>. Musings on web technologies. Dad jokes galore.</p>
+  <div class="blogs_container">
+    <ul class="blogs">
+      <li id="blog1">
+        <p><a href="cnn.com">ON CONFLICT</a></p>
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+      </li>
+      <li id="blog2">
+        <p><a href="cnn.com">Recursion Excursion</a></p>
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+      </li>
+      <li id="blog3">
+        <p><a href="blog/blog.html">Coming Soon!</a></p>
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+      </li>
+      <li id="blog4">
+        <p><a href="blog/blog.html">Coming Soon!</a></p>
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+      </li>
+    </ul>
+  </div>
+  <h1>about me</h1>
+  <p><img style="display:block; margin:auto;" src="images/thumbs_up.png"></p>
+  <p id="about_me_blurb">Aspiring web-developer and former attorney.  I don't take cases anymore, but if you buy me a beer, I'll delight you with war stories from my days in criminal defense.</p>
+  <div class="social_media">
+    <ul class="social_media_links">
+      <li><a href=""><img src="images/linkedin_logo_small.png"></a></li>
+      <li><a href=""><img src="images/github_logo_small.png"></a></li>
+      <li><a href=""><img src="images/googleplus_logo_small.png"></a></li>
+      <li><a href=""><img src="images/twitter_logo_small.png"></a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+</body></html>
