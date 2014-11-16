@@ -107,6 +107,10 @@ div.masthead {
     font-family: "Architects Daughter";
 }
 
+.content a:visited {
+    color: #1A0000
+}
+
 .content a:hover {
     color: green;
 }
