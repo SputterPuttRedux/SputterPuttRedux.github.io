@@ -228,14 +228,18 @@ ul.blogs {
     color:white;
 }
 
-li#blog1{
+li#blog3{
     background-image: url("../images/on_conflict_thumb.png");
 }
-li#blog2{
+li#blog4{
     background-image: url("../images/recursion_thumb.png");
 }
-li#blog3{}
-li#blog4{}
+li#blog1{
+    background-image: url("..images/questions.jpg");
+}
+li#blog2{
+    background-image: url("../images/professional_blog_thumb.jpg");
+}
 
 /*.blogs li:hover {
     border: 2px solid #001031;
