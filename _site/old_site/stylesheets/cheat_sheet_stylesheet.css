@@ -1,0 +1,17 @@
+ body {
+   background-color: #4477bb;
+ }
+
+
+ .image {
+  margin: auto;
+  width: 662px;
+}
+
+.title {
+  text-align: center;
+}
+
+h1 {
+  font-family: Bevan;
+}

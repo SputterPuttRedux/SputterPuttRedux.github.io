@@ -1,0 +1,41 @@
+
+          * {
+            margin: 0;
+            padding: 0;
+          }
+          a:hover {
+            color: cyan;
+          }
+          #header {
+            background: red;
+            border-bottom: 2px solid green;
+          }
+          #header h1 {
+            color: green;
+            text-align: center;
+          }
+          #content {
+            background: yellow;
+            font-family: Garamond;
+          }
+          #footer{
+            background: red;
+          }
+          ul{
+            list-style-type: none;
+          }
+
+          ul li {
+            text-align: center;
+            margin-right: 16px;
+          }
+
+          li a {
+            font-size: 25px;
+          }
+          #bottom-list img {
+            width: 50%;
+            height: 50%;
+            margin: auto;
+          }
+

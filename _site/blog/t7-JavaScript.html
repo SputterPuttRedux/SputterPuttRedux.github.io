@@ -1,0 +1,51 @@
+<html>
+<head>
+  <title>blog</title>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+<body>
+<!--Below this line is the Blog Entry "Header" -->
+  <div class="blog" id="W7Technical">
+    <h1 class="blog" id="title_font">JavaScript vs. Ruby</h1>
+    <h2>differences between classes and constructor functions</h2>
+    <h3 class="blog" id="date_font">November 2, 2014</h3>
+     </div>
+  <div id="line_break"></div>
+<!--Below this line is the actual Blog Entry -->
+  <div class="blog" id="blog_entry">
+    <p>This week's challenges in Phase 0 have introduced we new boots to JavaScript.  Like Ruby, JavaScript is an Object-Oriented programming language--for that reason, JavaScript felt eerily familiar to Ruby.  There are plenty of ways that JavaScript is not like Ruby, though, and this blog entry is dedicated to exploring one of those ways. So, without further adieu, let's talk about the differece between classes and constructor functions!</p>
+    <p>Remember my blog entry on <a href="blog.html#W5Technical">Ruby Classes</a>? If not, take a look back.  In that entry I give an overview of what a class is, what it can contain and what it does. That blog entry does not talk about one important aspect of classs though--the relationship classes can share with one another called <a href="http://rubylearning.com/satishtalim/ruby_inheritance.html">inheritance</a>. Ruby's inheritence feature allows classes to share information.  It's not a completely mutal form of sharing, though. In fact, it's called <a href="https://thenewcircle.com/static/bookshelf/ruby_tutorial/class_inheritance.html">single inheritance</a> and it means that only on class can inherit from another.</p>
+    <p>What's all this got to do with JavaScript, you ask?  Well, JavaScript isn't a classist language.  That means it doesn't use a class structure to organize information.  It does use something that can perform essentially similar functions.  In fact, those structures  are actually called <a href="http://www.w3schools.com/js/js_functions.asp">functions</a>.</p>
+    <p>Like Classes in Ruby, functions in JavaScript can contain methods:</p>
+    <p><code>function dog(name) {</code></p>
+      <p><code>this.name = name;</code></p>
+      <p><code>this.talk = function() {</code></p>
+         <p><code> alert(this.name + " say woof!")</code></p>
+     <p><code>}</code></p>
+    <p><code>};</code></p>
+    <caption>this code snippet was adapted from <a href="http://www.javascriptkit.com/javatutors/oopjs2.shtml">javascriptkit</a></caption>
+    <p>In the above snippet, <code>this.talk = function()</code> and the rest that follows in the curly braces is a method. If a new instance of dog were to be created, the #talk method would be available to be used on that new instance--just as you would expect when methods are defined within Ruby classes. In fact, new instances of <a href="http://www.javascriptkit.com/javatutors/oopjs2.shtml">constructor functions</a> in JavaScript use a notation that is similar to Ruby's notation for creating new classes--that is the <strong>new</strong> operator.  Check this out:</p>
+    <p><code>myDog = <strong>new</strong> dog("Ralphie");</code></p>
+
+    <p>This creates a new instance of the dog function. This:</p>
+    <p><code>bohemian_rhapsody = FreddieMercury.<strong>new</strong></code></p>
+
+    <p>creates a new instance of the <code>FreddieMercury</code> class from <a href="blog.html#W5Technical">my previous post</a>.</p>
+
+    <p>So now that we've looked a similarities, what about the differences?  Well, remember when I talked about inheritance a little earlier in this post? We already covered how inheritance in Ruby allows one class to share information with another. Here's an example of the notation that would allow for that:</p>
+
+    <p><code> class Queen < FreddieMercury</code></p>
+
+    <p>Using the above notation, we could allow our new class Queen access to all the attributes and methods available in FreddieMercury. However, in JavaScript it's not quite the same.  Remember, JavaScript doesn't actually have classes, so if we wanted to share information between objects we couldn't simply rely on the <code>></code> notation that we see in the above Ruby example.  We'd have to rely on JavaScript's <strong>prototyping</strong> functionality to share information. Let's use our <code>dog</code> function from above to demonstrate this. Say we wanted dog to be able to do more than just talk.  What if we wanted dog to be able to change it's name?  Let's take a look at another code example.
+
+    <p><code>dog.<strong>prototype</strong>.changeName = function(name) {</code></p>
+    <p><code>this.name = name;</code></p>
+    <p><code>}</code></p>
+    <p><caption>this code snippet was adapted from <a href="http://www.javascriptkit.com/javatutors/oopjs2.shtml">javascriptkit</a></caption><p>
+
+    <p>We've now added additional functionality to our <code>dog</code> function, such that if we were to create a new instance of dog with a name we didn't like, the method #changeName would be available to allow us to do just that! The <code>prototype</code> object that you see in bold above, allows the <code>dog</code> function to <strong>inherit</strong> the method <code>changeName</code>.  Are you wondering how this is at all like Ruby's class inheritance still? Good! You should be.  It turns out that in JavaScript, inheritence via the <code>prototype</code> object looks a heck of a lot like when we simply add methods directly to an existing class in Ruby. Therein lies the difference (somewhat).  In both languages there are express ways to share information between objects that contain other objects--the difference is in the way the objects themselves are structured and also the syntax used.</p>
+
+</div>
+<!--Blog Ends here -->
+
+</body></html>
