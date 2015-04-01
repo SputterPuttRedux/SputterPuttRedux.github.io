@@ -81,10 +81,15 @@ hr.star-primary:after {
 
 header {
     text-align: center;
-    color: #2C3E50;
+    color: #fff;
     background: #fff;
-    background-image: url('../img/header/cabrera-header.jpg');
+    background-image: url('../img/header/dionne_site_shot_2.jpg');
+    background-position: center center;
+    background-attachment: scroll;
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
 }
 
@@ -133,7 +138,7 @@ header .intro-text .skills {
 
 @media(min-width:768px) {
     .navbar-fixed-top {
-        padding: 25px 0;
+        padding: 5px 0;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -148,6 +153,7 @@ header .intro-text .skills {
 
     .navbar-fixed-top.navbar-shrink {
         padding: 10px 0;
+        background-color: rgba(94, 57, 49, 0.5);
     }
 
     .navbar-fixed-top.navbar-shrink .navbar-brand {
@@ -176,6 +182,7 @@ header .intro-text .skills {
 .navbar-default,
 .navbar-inverse {
     border: 0;
+    background-color: transparent;
 }
 
 section {
@@ -188,7 +195,7 @@ section h2 {
 }
 
 section.success {
-    color: #fff;
+    color: #{{ site.color.secondary }};
     background: #{{ site.color.primary }};
 }
 
@@ -455,14 +462,14 @@ footer .footer-below {
 /*Button containing logo for site*/
 
 .navbar-logo {
-    background-color: #2c3e50;
+    background-color: transparent;
     border: 0px;
 }
 
 /* change logo image on hover*/
 
 .navbar-logo img:hover {
-    background-image: url('../img/ds_logo_inverted.png');
+    background-image: url('../img/ds_logo_green_highlight.png');
 }
 
 /*styling for fa left and right chevrons*/
