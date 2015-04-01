@@ -46,14 +46,22 @@ function wikipediaRedirect(){
   return false;
 }
 
+function showRules(){
+  var $playerDiv = $("<div>", {id: playerID});
+  $('.player-rules').append();
+
+}
+
 $(document).ready(function() {
+
     var game = new Game();
     var player1 = new Player(1, "./assets/img/nyanCat.gif");
     var player2 = new Player(2, "./assets/img/zombieCat.gif");
-    var $modal_message =
 
     player1.updateImage();
     player2.updateImage();
+
+    $('.upon-entry').click();
 
     $(document).on('keyup', function(keyPress){
 
@@ -67,11 +75,6 @@ $(document).ready(function() {
         checkWinner(player2, game);
       }
     });
-
-    // $('.no-button').click(function (){
-    //   window.location.replace("http://en.wikipedia.org/wiki/Special:Random");
-    //   return false;
-    // });
 
     $('.no-button').click(function (){
       var timedRedirct = setInterval(wikipediaRedirect, 2500);
