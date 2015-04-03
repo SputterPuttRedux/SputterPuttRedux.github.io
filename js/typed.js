@@ -371,7 +371,7 @@
         // show cursor
         showCursor: true,
         // character for cursor
-        cursorChar: "|",
+        cursorChar: " |",
         // attribute to type (null == text)
         attr: null,
         // either html or text
@@ -390,7 +390,9 @@
 }(window.jQuery);
 
 $(document).ready(function(){
-    $(".intro-text").typed({
+    var $introText = $(".intro-text");
+
+    $introText.typed({
                 strings: ["<p>Hi, I'm Dionne.</p>", "<p>I'm a Philadelphia-area Web Developer.</p>","<p>Something meaningful that will make an impression.</p>"],
                 typeSpeed: 0
             });
