@@ -81,11 +81,12 @@ hr.star-primary:after {
 
 header {
     text-align: center;
+    font-family: Quicksand;
     color: #fff;
     background: #fff;
-    background-image: url('../img/header/dionne_site_shot_2.jpg');
-    background-position: center center;
     background-attachment: scroll;
+    background-image: url('../img/header/dionne_full_shot.jpg');
+    background-position: center center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -153,7 +154,7 @@ header .intro-text .skills {
 
     .navbar-fixed-top.navbar-shrink {
         padding: 10px 0;
-        background-color: rgba(94, 57, 49, 0.5);
+        background-color: rgba(14, 12, 64, 0.5);
     }
 
     .navbar-fixed-top.navbar-shrink .navbar-brand {
@@ -196,7 +197,7 @@ section h2 {
 
 section.success {
     color: #{{ site.color.secondary }};
-    background: #{{ site.color.primary }};
+    background-color: #{{ site.color.primary }};
 }
 
 @media(max-width:767px) {
@@ -268,9 +269,9 @@ section.success {
 
 .btn-outline {
     margin-top: 15px;
-    border: solid 2px #fff;
+    border: solid 2px #0e0c40;
     font-size: 20px;
-    color: #fff;
+    color: #0e0c40;;
     background: 0 0;
     transition: all .3s ease-in-out;
 }
@@ -280,7 +281,7 @@ section.success {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #{{ site.color.primary }};
+    color: #{{ site.color.secondary }};
     background: #fff;
 }
 
@@ -359,7 +360,7 @@ footer .footer-col {
 
 footer .footer-below {
     padding: 25px 0;
-    background-color: #{{ site.color.secondary-dark }};
+    background-color: #{{ site.color.tertiary }};
 }
 
 .btn-social {
@@ -469,7 +470,7 @@ footer .footer-below {
 /* change logo image on hover*/
 
 .navbar-logo img:hover {
-    background-image: url('../img/ds_logo_green_highlight.png');
+    background-image: url('../img/ds_logo_blue_hover.png');
 }
 
 /*styling for fa left and right chevrons*/
@@ -496,8 +497,71 @@ footer .footer-below {
     list-style-type: none;
 }
 
-/*carousel caption text*/
+/*footer button decoration*/
+.footer-col .btn-outline{
+    color: #fff;
+}
 
-/*.carousel-caption {
-     position:relative;
-}*/
+/*typed.js cursor*/
+
+.typed-cursor{
+    opacity: 1;
+   -webkit-animation: blink 0.7s infinite;
+   -moz-animation: blink 0.7s infinite;
+   animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+
+/* plain hr styling */
+
+hr.title {
+    margin: 25px auto 30px;
+    padding: 0;
+    max-width: 250px;
+    border: 0;
+    border-top: solid 5px;
+    text-align: center;
+}
+
+/* font-awesome fonts inside li tags*/
+
+li.fa {
+    font-size: 2em;
+}
+
+/* resume div spacing */
+
+.resume-link {
+    padding-top: 75px;
+}
+
+/*philly image div*/
+#philly-strip {
+    background-image: url("../img/cabrera_philly_strip.jpg");
+}
+
+h3.philly-strip {
+    color: #fff;
+}
+
+#hobbies-strip {
+    background-image: url("../img/cabrera_philly_strip.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
