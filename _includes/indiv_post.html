@@ -1,0 +1,10 @@
+<section id="individual-post">
+  <div class="post">
+      <h3 class="post-title">{{ page.title }}</h3>
+      <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+      <hr>
+    <article class="post-content">
+      {{ content }}
+    </article>
+  </div>
+</section>
