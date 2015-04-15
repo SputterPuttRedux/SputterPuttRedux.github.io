@@ -573,7 +573,11 @@ h3.philly-strip {
 /* Individual Post styling */
 
 .post-title {
-    /*text-align: center;*/
+    padding-left: 50px;
+}
+
+.post-meta {
+    padding-left: 50px;
 }
 
 .posts-page-heading {
@@ -590,8 +594,18 @@ h3.philly-strip {
 
 .post-content a:visited {
     color: #666666;
-};
+}
 
 code {
     background-color: #fff;
 }
+
+p img {
+    display: block;
+    margin: auto;
+}
+
+#individual-post {
+    font-family: Arial;
+}
+
