@@ -504,6 +504,10 @@ footer .footer-below {
     list-style-type: none;
 }
 
+.post-list a {
+    color: #0e0c40;
+}
+
 /*footer button decoration*/
 .footer-col .btn-outline{
     color: #fff;
@@ -572,3 +576,43 @@ h3.philly-strip {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+/* Individual Post styling */
+
+.post-title {
+    padding-left: 50px;
+}
+
+.post-meta {
+    padding-left: 50px;
+}
+
+.posts-page-heading {
+    text-align: center;
+}
+
+.post-content {
+    font-size: 1em;
+}
+
+.post-content a {
+    color: #1c98a6
+}
+
+.post-content a:visited {
+    color: #666666;
+}
+
+code {
+    background-color: #fff;
+}
+
+p img {
+    display: block;
+    margin: auto;
+}
+
+#individual-post {
+    font-family: Arial;
+}
+
