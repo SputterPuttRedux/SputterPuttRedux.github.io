@@ -11,20 +11,20 @@ Hey boots! Let's learn about one of the most difficult topics I've yet encounter
 
 At it's most basic, recursion is a process of [self-similar](http://en.wikipedia.org/wiki/Self-similarity) repetition.  In computer programming, this translates to  a loop that calls to itself to complete some task. Take, for instance, the following example I've written in [IRB](http://en.wikipedia.org/wiki/Interactive_Ruby_Shell):
 
-```
+```ruby
 def recursive(array)
-if array.length == 1
-return 1
-else
-array.pop
-recursive(array)
-end
+  if array.length == 1
+    return 1
+  else
+    array.pop
+    recursive(array)
+  end
 end
 ```
 
 If you were to copy and paste the above code into an IRB console, the [method](http://en.wikipedia.org/wiki/Method_%28computer_programming%29) would execute, but you really wouldn't see what was going on under the hood.  This version would provide an example that's a little more demonstrative:
 
-```
+```ruby
 def simple_recursive(array)
   puts "Hello, your array contains #{array.length} items."
   puts "Now calling your recursive method:"
@@ -53,7 +53,7 @@ A super simple example?  Yes. Hopefully, it was an approachable one, too.  A sli
 
 #### Calculating a Factorial Recursively
 
-```
+```ruby
 def factorial(x)
   if x == 1
     return 1
