@@ -4,7 +4,7 @@ title:  " 'git:' Not Just an English Dirty Word "
 date:   2014-09-18 15:40:41
 categories:
 ---
-We’ve touched on many concepts that were new to me in this first week of DBC Phase 0, and I’d like to take a little bit of time to explain some of them in a way that’s accessible and hopefully easy to understand.
+We’ve touched on many concepts that were new to me in this first week of [DBC](http://http://devbootcamp.com/) [Phase 0](http://devbootcamp.com/learn-ruby-javascript/daily-life/#remote), and I’d like to take a little bit of time to explain some of them in a way that’s accessible and hopefully easy to understand.
 
 Below you’ll find my attempt to do just that on the topic of version control and, relatedly, on how [git](http://en.wikipedia.org/wiki/Git_%28software%29) and [Github](http://en.wikipedia.org/wiki/GitHub) track changes and stores code.
 
