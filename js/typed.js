@@ -393,7 +393,7 @@ $(document).ready(function(){
     var $introText = $(".intro-text");
 
     $introText.typed({
-                strings: ["<p>Hi, I'm Dionne.</p>", "<p>I'm a Philadelphia-area Web Developer.</p>","<p>Something meaningful that will make an impression.</p>"],
+                strings: ["<p>Hi, I'm Dionne.</p>", "<p>I'm a Philadelphia-area Web Developer.</p>","<p>I code to bring useful, meaningful things to life.</p>"],
                 typeSpeed: 0
             });
 });
