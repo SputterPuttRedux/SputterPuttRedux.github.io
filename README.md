@@ -1,5 +1,5 @@
 My personal website.
 
-Made using a [Jekyll](https://jekyllrb.com/){:target="_blank"} theme based on [Freelancer bootstrap theme ](http://startbootstrap.com/templates/freelancer/){:target="_blank"}
+Made using a <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> theme based on <a href="http://startbootstrap.com/templates/freelancer/" target="_blank">Freelancer Bootstrap</a> theme.
 
-[See it live here!](http://sputterputtredux.github.io/){:target="_blank"}
+<p><a href="http://sputterputtredux.github.io/" target="_blank">See it live here!</a></p>
