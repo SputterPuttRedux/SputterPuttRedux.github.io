@@ -1,8 +1,9 @@
 *.xcf
 /_site/
 _site
-.sass-cache
+.sass-cache*
 .jekyll-cache
 .jekyll-metadata
 vendor
 .DS_Store
+Gemfile*
